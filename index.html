@@ -896,7 +896,6 @@ console.log('\nHaciendo otra cosa\n');
 				</ul>
 				<p class="clear"><a href="#/2">&lt;&lt; regresar al temario</a></p>
 			</section>
-			<!-- 
 			<section>
 				<h2>Node Package Manager</h2>
 				<div><img src="img/batmanVsuperman.gif"></div>
@@ -911,9 +910,9 @@ console.log('\nHaciendo otra cosa\n');
 				<h2>Iniciar un proyecto npm</h2>
 				<pre>
 					<code class="terminal">
-			$ > npm init //Con asistente
-			
-			$ > npm init -y //Sin asistente
+$ > npm init //Con asistente
+
+$ > npm init -y //Sin asistente
 					</code>
 				</pre>
 			</section>
@@ -943,11 +942,11 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Se instalan en la carpeta donde se encuentre la terminal de comandos, NO se registran en el archivo package.json</p>
 				<pre>
 					<code class="terminal">
-			$ > npm install [nombre del package]
-			
-			$ > npm install [nombre del package]@3.4.12 // Versión específica
-			
-			$ > npm i [nombre del package] //shortcut
+$ > npm install [nombre del package]
+
+$ > npm install [nombre del package]@3.4.12 // Versión específica
+
+$ > npm i [nombre del package] //shortcut
 					</code>
 				</pre>
 			</section>
@@ -956,9 +955,9 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Se instalan en la carpeta donde se encuentre la terminal de comandos, SI se registran en el archivo package.json como dependencias del proyecto, esto significa que el proyecto requiere de éstos paquetes para funcionar</p>
 				<pre>
 					<code class="terminal">
-			$ > npm install [nombre del package] --save
-			
-			$ > npm install [nombre del package] -S //shortcut
+$ > npm install [nombre del package] --save
+
+$ > npm install [nombre del package] -S //shortcut
 					</code>
 				</pre>
 			</section>
@@ -967,9 +966,9 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Se instalan en la carpeta donde se encuentre la terminal de comandos, SI se registran en el archivo package.json como dependencias de desarrollo del proyecto, esto significa que facilitan y optimizan las tareas comunes de desarrollo y publicación del proyecto</p>
 				<pre>
 					<code class="terminal">
-			$ > npm install [nombre del package] --save-dev
-			
-			$ > npm install [nombre del package] -D //shortcut
+$ > npm install [nombre del package] --save-dev
+
+$ > npm install [nombre del package] -D //shortcut
 					</code>
 				</pre>
 			</section>
@@ -978,9 +977,9 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Se instalan localmente en el ordenador independientemente de donde se encuentre la terminal de comandos, esto significa que estarán disponibles en todas las carpetas del ordenador, NO se registran en el archivo package.json</p>
 				<pre>
 					<code class="terminal">
-			$ > npm install [nombre del package] --global
-			
-			$ > npm install [nombre del package] -g //shortcut
+$ > npm install [nombre del package] --global
+
+$ > npm install [nombre del package] -g //shortcut
 					</code>
 				</pre>
 			</section>
@@ -989,7 +988,7 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Se pueden instalar múltiples paquetes, separando sus nombres con un espacio en blanco y al final especificar el flag del tipo de instalación</p>
 				<pre>
 					<code class="terminal">
-			$ > npm install [package1] [package2] [package3] --flag
+$ > npm install [package1] [package2] [package3] --flag
 					</code>
 				</pre>
 			</section>
@@ -998,7 +997,7 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Cuando un proyecto tiene el archivo package.json se pueden instalar todas las dependencias de proyecto y desarrollo que tenga registradas en el mismo</p>
 				<pre>
 					<code class="terminal">
-			$ > npm install
+$ > npm install
 					</code>
 				</pre>
 			</section>
@@ -1006,15 +1005,15 @@ console.log('\nHaciendo otra cosa\n');
 				<h3>Actualización de paquetes</h3>
 				<pre>
 					<code class="terminal">
-			$ > npm update [package] //se actualiza de la carpeta node_modules
-			
-			$ > npm update [package] --save
-			
-			$ > npm update [package] --save-dev
-			
-			$ > npm update [package] --global
-			
-			$ > npm update [package] //shortcut
+$ > npm update [package] //se actualiza de la carpeta node_modules
+
+$ > npm update [package] --save
+
+$ > npm update [package] --save-dev
+
+$ > npm update [package] --global
+
+$ > npm update [package] //shortcut
 					</code>
 				</pre>
 			</section>
@@ -1022,15 +1021,15 @@ console.log('\nHaciendo otra cosa\n');
 				<h3>Desinstalación de paquetes</h3>
 				<pre>
 					<code class="terminal">
-			$ > npm uninstall [package] //se borra de la carpeta node_modules
-			
-			$ > npm uninstall [package] --save
-			
-			$ > npm uninstall [package] --save-dev
-			
-			$ > npm uninstall [package] --global
-			
-			$ > npm un [package] //shortcut
+$ > npm uninstall [package] //se borra de la carpeta node_modules
+
+$ > npm uninstall [package] --save
+
+$ > npm uninstall [package] --save-dev
+
+$ > npm uninstall [package] --global
+
+$ > npm un [package] //shortcut
 					</code>
 				</pre>
 			</section>
@@ -1039,7 +1038,7 @@ console.log('\nHaciendo otra cosa\n');
 				<p>Un paquete no puede volver a re-publicarse con la misma versión. Si despublicas un paquete puedes romper Internet</p>
 				<pre>
 					<code class="terminal">
-			$ > npm publish
+$ > npm publish
 					</code>
 				</pre>
 			</section>
@@ -1049,15 +1048,15 @@ console.log('\nHaciendo otra cosa\n');
 				<p>'npm start' no necesita especificar 'run', es el script standar para lanzar un proyecto npm</p>
 				<pre>
 					<code class="json">
-			"scripts": {
-			  "sass": "node-sass -o ./dist/ ./src/",
-			  "stylus": "stylus -w ./src/style.styl -o ./dist/style.css",
-			  "start": "supervisor main.js"
-			 }
-			 
-			$ > npm run sass
-			$ > npm run stylus
-			$ > npm start
+"scripts": {
+  "sass": "node-sass -o ./dist/ ./src/",
+  "stylus": "stylus -w ./src/style.styl -o ./dist/style.css",
+  "start": "supervisor main.js"
+ }
+ 
+$ > npm run sass
+$ > npm run stylus
+$ > npm start
 					</code>
 				</pre>
 			</section>
@@ -1075,48 +1074,42 @@ console.log('\nHaciendo otra cosa\n');
 				<h3>Paquetes NPM útiles en el Frontend:</h3>
 				<ul  class="tres-columnas">
 					<li><a href="https://www.npmjs.com/package/gulp" target="_blank">Gulp</a></li>
-					<li><a href="https://www.npmjs.com/package/node-sass" target="_blank">Node SASS</a></li>
+					<li><a href="https://www.npmjs.com/package/pug" target="_blank">Pug</a></li>
 					<li><a href="https://www.npmjs.com/package/postcss" target="_blank">PostCSS</a></li>
-					<li><a href="https://www.npmjs.com/package/uncss" target="_blank">UNCSS</a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
+					<li><a href="https://www.npmjs.com/package/browser-sync" target="_blank">Browser Sync</a></li>
+					<li><a href="https://www.npmjs.com/package/uncss" target="_blank">Un CSS</a></li>
+					<li><a href="https://www.npmjs.com/package/gulp-concat" target="_blank">Gulp Concat</a></li>
+					<li><a href="https://www.npmjs.com/package/pngquant" target="_blank">PNG Quant</a></li>
 				</ul>
 				<ul  class="tres-columnas">
 					<li><a href="https://www.npmjs.com/package/grunt" target="_blank">Grunt</a></li>
-					<li><a href="https://www.npmjs.com/package/stylus" target="_blank">Stylus</a></li>
+					<li><a href="https://www.npmjs.com/package/node-sass" target="_blank">Node SASS</a></li>
 					<li><a href="https://www.npmjs.com/package/autoprefixer" target="_blank">Autoprefixer</a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
+					<li><a href="https://www.npmjs.com/package/onchange" target="_blank">On Change</a></li>
+					<li><a href="https://www.npmjs.com/package/clean-css " target="_blank">Clean CSS</a></li>
+					<li><a href="https://www.npmjs.com/package/useref" target="_blank">Useref</a></li>
+					<li><a href="https://www.npmjs.com/package/gulp-svgmin" target="_blank">Gulp SVG Min</a></li>
+					<li><a href="http://imagemagick.org/script/index.php" target="_blank">Image Magick</a></li>
 				</ul>
 				<ul  class="cuatro-columnas">
 					<li><a href="https://www.npmjs.com/package/webpack" target="_blank">Webpack</a></li>
-					<li><a href="https://www.npmjs.com/package/less" target="_blank">LESS</a></li>
+					<li><a href="https://www.npmjs.com/package/babel" target="_blank">Babel</a></li>
 					<li><a href="https://github.com/ai/browserslist" target="_blank">Browser List</a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
+					<li><a href="https://www.npmjs.com/package/parallelshell" target="_blank">Parallel Shell</a></li>
+					<li><a href="https://www.npmjs.com/package/uglify" target="_blank">Uglify</a></li>
+					<li><a href="https://www.npmjs.com/package/image-min" target="_blank">Image Min</a></li>
+					<li><a href="https://www.npmjs.com/package/gulp-webp" target="_blank">Gulp Webp</a></li>
 				</ul>
+				<br class="clear">
 				<p class="clear"><a href="#/2">&lt;&lt; regresar al temario</a></p>
 			</section>
 			
 			
+
 			
 			
 			
-			
+			<!-- 
 			<section>
 				<h2>Paquetes Globales</h2>
 				<ul>
