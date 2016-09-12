@@ -63,7 +63,7 @@
 					<li><a href="#/77">Node Package Manager</a></li>
 					<li><a href="#/93">Node.js en el Frontend</a></li>
 					<li><a href="#/95">Aplicaciones Web</a></li>
-					<li><a href="#/125">Aplicaciones en Tiempo Real</a></li>
+					<li><a href="#/126">Aplicaciones en Tiempo Real</a></li>
 					<li><a href="#/125">Persistencia de Datos</a></li>
 					<li><a href="#/125">Node.js en Producción</a></li>
 				</ol>
@@ -1409,8 +1409,127 @@ $ > npm start
 				</p>
 				<p><a href="#/96">&lt;&lt; regresar a Aplicaciones Web</a></p>
 			</section>
-			
-			
+			<section>
+				<h2>Aplicaciones en Tiempo Real</h2>
+				<img src="img/real-time.png" style="max-width:40%;">
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>Aplicaciones en Tiempo Real</h2>
+				<ul>
+					<li><a href="#/128">Web Sockets</a></li>
+					<li><a href="#/132">Socket.IO</a></li>
+					<li><a href="#/136">Creación y Análisis de Chat</a></li>
+				</ul>
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>¿Qué son <a href="https://www.websocket.org/" target="_blank">websockets</a>?</h2>
+				<p>Protocolo de comunicación</p>
+				<ul>
+					<li>Full-duplex</li>
+					<li>Una sola conexión permanente</li>
+					<li>Stream de mensajes</li>
+					<li>Contenido en tiempo real</li>
+				</ul>
+			</section>
+			<section>
+				<h2>¿Qué son websockets?</h2>
+				<p>Es decir...</p>
+				<ul>
+					<li>El cliente puede enviar y recibir datos en tiempo real</li>
+					<li>Orientado a "eventos" (mensajes)</li>
+					<li>Siempre conectado</li>
+					<li>Baja latencia</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Websockets y Node.js</h2>
+				<p>
+					Funcionan bien
+					<div class="carita">}=D</div>
+				</p>
+				<ul>
+					<li>El servidor maneja muchas conexiones simultáneas</li>
+					<li>Buena integración con JSON</li>
+					<li>Eventos</li>
+				</ul>
+			</section>
+			<section>
+				<h2>¿Para qué sirven?</h2>
+				<p>Fundamentalmente, para:</p>
+				<ul>
+					<li>Actividades colaborativas</li>
+					<li>Juegos multijugador</li>
+					<li>Enviar datos</li>
+					<li>Cargar recursos</li>
+					<li>En resumen: tiempo real en vez de "a petición"</li>
+				</ul>
+				<p><a href="#/127">&lt;&lt; regresar a Aplicaciones en Tiempo Real</a></p>
+			</section>
+			<section>
+				<h2>Socket.IO</h2>
+				<p>Vamos a usar <a href="http://socket.io/" target="_blank">Socket.IO</a></p>
+				<ul>
+					<li>Una librería para manipular websockets</li>
+					<li>Muy popular</li>
+					<li>Fallback para navegadores obsoletos</li>
+					<li>Muy fácil de usar</li>
+					<li>Servidor / Cliente</li>
+					<li><a href="http://socket.io/docs/" target="_blank">API DOC</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Socket.IO</h2>
+				<p>Los sockets emiten eventos</p>
+				<ul>
+					<li>Un evento = un "mensaje"</li>
+					<li>Se pueden pasar parámetros</li>
+					<li><code>socket.on(mensaje, callback)</code></li>
+					<li><code>socket.emit(mensaje, [param1, param2, ...])</code></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Socket.IO</h2>
+				<p>Eventos reservados en el:</p>
+				<ul>
+					<li>
+						Servidor:
+						<ul>
+							<li><code>io.sockets.on("connection", cb)</code></li>
+							<li><code>socket.on("message", cb)</code></li>
+							<li><code>socket.on("disconnect", cb)</code></li>
+						</ul>
+					</li>
+					<li>
+						Cliente:
+						<ul>
+							<li><code>socket.on("connect", cb)</code></li>
+							<li><code>socket.on("disconnect", cb)</code></li>
+							<li><code>socket.on("error", cb)</code></li>
+							<li><code>socket.on("message", cb)</code></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Let's to Code! \<div class="carita">XD</div>/</h1>
+				<p><a href="#/127">&lt;&lt; regresar a Aplicaciones en Tiempo Real</a></p>
+			</section>
+			<section>
+				<h2>Chat con Node.js</h2>
+				<p>Vamos a crear un chat con:</p>
+				<ul>
+					<li>Express</li>
+					<li>Socket.IO</li>
+				</ul>
+				<p>Y después...</p>
+				<ul>
+					<li>Analizaremos un <a href="http://socket.io/demos/chat/" target="_blank">Super Chat</a></li>
+				</ul>
+				<p><a href="#/127">&lt;&lt; regresar a Aplicaciones en Tiempo Real</a></p>
+			</section>
+	
 
 			
 			
@@ -1956,157 +2075,6 @@ $ > npm start
 					</li>
 				</ul>
 				<p><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
-			</section>
-			<section>
-				<h1>Unidad 6</h1>
-				<h2>Aplicaciones en Tiempo Real</h2>
-				<div>
-					<img src="img/real-time.png" style="max-width:40%;">
-				</div>
-				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
-			</section>
-			<section>
-				<h2>Aplicaciones en Tiempo Real</h2>
-				<ul>
-					<li><a href="#/164">Web Sockets</a></li>
-					<li><a href="#/168">Socket.IO</a></li>
-					<li><a href="#/172">Creación y Análisis de Chat</a></li>
-					<li><a href="#/173">Streaming de Video</a></li>
-				</ul>
-				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
-			</section>
-			<section>
-				<h2>¿Qué son <a href="https://www.websocket.org/" target="_blank">websockets</a>?</h2>
-				<p>Protocolo de comunicación</p>
-				<ul>
-					<li>Full-duplex</li>
-					<li>Una sola conexión permanente</li>
-					<li>Stream de mensajes</li>
-					<li>Contenido en tiempo real</li>
-				</ul>
-			</section>
-			<section>
-				<h2>¿Qué son websockets?</h2>
-				<p>Es decir...</p>
-				<ul>
-					<li>El cliente puede enviar y recibir datos en tiempo real</li>
-					<li>Orientado a "eventos" (mensajes)</li>
-					<li>Siempre conectado</li>
-					<li>Baja latencia</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Websockets y Node.js</h2>
-				<p>
-					Funcionan bien
-					<div class="carita">}=D</div>
-				</p>
-				<ul>
-					<li>El servidor maneja muchas conexiones simultáneas</li>
-					<li>Buena integración con JSON</li>
-					<li>Eventos</li>
-				</ul>
-			</section>
-			<section>
-				<h2>¿Para qué sirven?</h2>
-				<p>Fundamentalmente, para:</p>
-				<ul>
-					<li>Actividades colaborativas</li>
-					<li>Juegos multijugador</li>
-					<li>Enviar datos</li>
-					<li>Cargar recursos</li>
-					<li>En resumen: tiempo real en vez de "a petición"</li>
-				</ul>
-				<p><a href="#/163">&lt;&lt; regresar unidad 6</a></p>
-			</section>
-			<section>
-				<h2>Socket.IO</h2>
-				<p>Vamos a usar <a href="http://socket.io/" target="_blank">Socket.IO</a></p>
-				<ul>
-					<li>Una librería para manipular websockets</li>
-					<li>Muy popular</li>
-					<li>Fallback para navegadores obsoletos</li>
-					<li>Muy fácil de usar</li>
-					<li>Servidor / Cliente</li>
-					<li><a href="http://socket.io/docs/" target="_blank">API DOC</a></li>
-				</ul>
-			</section>
-			<section>
-				<h2>Socket.IO</h2>
-				<p>Los sockets emiten eventos</p>
-				<ul>
-					<li>Un evento = un "mensaje"</li>
-					<li>Se pueden pasar parámetros</li>
-					<li><code>socket.on(mensaje, callback)</code></li>
-					<li><code>socket.emit(mensaje, [param1, param2, ...])</code></li>
-				</ul>
-			</section>
-			<section>
-				<h2>Socket.IO</h2>
-				<p>Eventos reservados en el:</p>
-				<ul>
-					<li>
-						Servidor:
-						<ul>
-							<li><code>io.sockets.on("connection", cb)</code></li>
-							<li><code>socket.on("message", cb)</code></li>
-							<li><code>socket.on("disconnect", cb)</code></li>
-						</ul>
-					</li>
-					<li>
-						Cliente:
-						<ul>
-							<li><code>socket.on("connect", cb)</code></li>
-							<li><code>socket.on("disconnect", cb)</code></li>
-							<li><code>socket.on("error", cb)</code></li>
-							<li><code>socket.on("message", cb)</code></li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h1>Let's to Code! \<div class="carita">XD</div>/</h1>
-				<p><a href="#/163">&lt;&lt; regresar unidad 6</a></p>
-			</section>
-			<section>
-				<h2>Chat con Node.js</h2>
-				<p>Vamos a crear un chat con:</p>
-				<ul>
-					<li>Express</li>
-					<li>Socket.IO</li>
-				</ul>
-				<p>Y después...</p>
-				<ul>
-					<li>Analizaremos un <a href="http://socket.io/demos/chat/" target="_blank">Super Chat</a></li>
-				</ul>
-				<p><a href="#/163">&lt;&lt; regresar unidad 6</a></p>
-			</section>
-			<section>
-				<h2>Streaming de Video:</h2>
-				<p>Considerar las siguientes API's:</p>
-				<ul>
-					<li>
-						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window.URL" target="_blank">Window.URL</a>
-						<b class="fragment">(<small>Para manipular objetos en la URL</small>)</b>
-					</li>
-					<li>
-						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial" target="_blank">Canvas</a>
-						<b class="fragment">(<small>Para crear el area de renderizado del stream en el cliente</small>)</b>
-					</li>
-					<li>
-						<a href="https://developer.mozilla.org/es/docs/Web/API/Navigator.getUserMedia" target="_blank">Navigator.getUserMedia</a>
-						<b class="fragment">(<small>Para tener acceso a la camara web</small>)</b>
-					</li>
-					<li>
-						<a href="https://developer.mozilla.org/es/docs/DOM/window.requestAnimationFrame" target="_blank">window.requestAnimationFrame</a>
-						<br />
-						<b class="fragment">(<small>Para gestionar la reproducción del stream del cliente</small>)</b>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h1>Let's to Stream! \<div class="carita">XD</div>/</h1>
-				<p><a href="#/163">&lt;&lt; regresar unidad 6</a></p>
 			</section>
 			<section>
 				<h1>Unidad 7</h1>
