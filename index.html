@@ -64,8 +64,8 @@
 					<li><a href="#/93">Node.js en el Frontend</a></li>
 					<li><a href="#/95">Aplicaciones Web</a></li>
 					<li><a href="#/126">Aplicaciones en Tiempo Real</a></li>
-					<li><a href="#/125">Persistencia de Datos</a></li>
-					<li><a href="#/125">Node.js en Producción</a></li>
+					<li><a href="#/137">Persistencia de Datos</a></li>
+					<li><a href="#/176">Node.js en Producción</a></li>
 				</ol>
 			</section>
 			<section>
@@ -1529,142 +1529,22 @@ $ > npm start
 				</ul>
 				<p><a href="#/127">&lt;&lt; regresar a Aplicaciones en Tiempo Real</a></p>
 			</section>
-	
-
-			
-			
-			<!-- 
-			
 			<section>
-				<h2>Paquetes Globales</h2>
-				<ul>
-					<li>
-						<a href="https://www.npmjs.com/package/node-inspector" target="_blank">node-inspector</a>
-						<code class="fragment">(<small>node-debug mi-archivo.js</small>)</code>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/supervisor" target="_blank">supervisor</a>
-						<code class="fragment">(<small>supervisor mi-archivo.js</small>)</code>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a>
-						<code class="fragment">(<small>nodemon mi-archivo.js</small>)</code>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/forever" target="_blank">forever</a>
-						<code class="fragment">(<small>forever start/stop mi-archivo.js</small>)</code>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a>
-						<code class="fragment">(<small>pm2 start/stop mi-archivo.js</small>)</code>
-					</li>
-				</ul>
-			</section>
-			
-			<section>
-				<h1>Unidad 5</h1>
 				<h2>Persistencia de Datos</h2>
-				<div>
-					<img src="img/persistencia-datos.png" style="max-width:60%;">
-				</div>
+				<img src="img/persistencia-datos.png" style="max-width:60%;">
 				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
 			</section>
 			<section>
 				<h2>Persistencia de Datos con Node.js</h2>
 				<ul>
-					<li><a href="#/125">CRUD vs REST</a></li>
-					<li><a href="#/132">SQL vs NoSQL</a></li>
-					<li><a href="#/135">API CRUD MySQL</a></li>
-					<li><a href="#/136">API REST MySQL</a></li>
-					<li><a href="#/137">Introducción a MongoDB</a></li>
-					<li><a href="#/161">API REST MongoDB</a></li>
+					<li><a href="#/139">SQL vs NoSQL</a></li>
+					<li><a href="#/142">CRUD vs REST</a></li>
+					<li><a href="#/149">API CRUD MySQL</a></li>
+					<li><a href="#/150">API REST MySQL</a></li>
+					<li><a href="#/151">Introducción a MongoDB</a></li>
+					<li><a href="#/175">API REST MongoDB</a></li>
 				</ul>
 				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
-			</section>
-			<section>
-				<h2>Aplicaciones REST</h2>
-				<br />
-				<h3>VS</h3>
-				<br />
-				<h2>Aplicaciones CRUD</h2>
-			</section>
-			<section>
-				<h2><a href="http://es.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST</a></h2>
-				<br />
-				<h4>Representational State Transfer</h4>
-				<br />
-				<h4>Transferencia de Estado Representacional</h4>
-			</section>
-			<section>
-				<h2>REST</h2>
-				<p>
-					Es una técnica de arquitectura software para sistemas hipermedia distribuidos como Internet
-				</p>
-				<br />
-				<p>
-					El término lo acuña Roy Fielding en su tesis doctoral del año 2000 sobre la web
-				</p>
-				<br />
-				<p>
-					Es uno de los principales autores de la especificación del protocolo HTTP
-				</p>
-			</section>
-			<section>
-				<p>REST se basa en las operaciones del protocolo HTTP</p>
-				<p>
-					REST afirma que la web ha disfrutado de escalabilidad como resultado de una serie de diseños fundamentales clave:
-				</p>
-				<br />
-				<ul>
-					<li>
-						Un protocolo cliente/servidor sin estado
-						Como resultado, ni el cliente ni el servidor necesitan recordar ningún estado de las comunicaciones entre mensajes. Sin embargo, en la práctica, muchas aplicaciones basadas en HTTP utilizan cookies y otros mecanismos para mantener el estado de la sesión (algunas de estas prácticas, como la reescritura de URLs, no son permitidas por REST)
-					</li>
-					<li>
-						Un conjunto de operaciones bien definidas que se aplican a todos los recursos de información
-						HTTP en sí define un conjunto pequeño de operaciones, las más importantes son POST, GET, PUT y DELETE. Con frecuencia estas operaciones se equiparan a las operaciones CRUD en bases de datos (ABMC en castellano: Alta, Baja, Modificación y Consulta) que se requieren para la persistencia de datos, aunque POST no encaja exactamente en este esquema
-					</li>
-					<li>
-						Una sintaxis universal para identificar los recursos
-						En un sistema REST, cada recurso es direccionable únicamente a través de su URI
-					</li>
-					<li>
-						El uso de hipermedios
-						tanto para la información de la aplicación como para las transiciones de estado de la aplicación: la representación de este estado en un sistema REST son típicamente HTML o XML. Como resultado de esto, es posible navegar de un recurso REST a muchos otros, simplemente siguiendo enlaces sin requerir el uso de registros u otra infraestructura adicional
-					</li>
-				</ul>
-			</section>
-			<section>
-				<p>Los sistemas que siguen los principios REST se llaman con frecuencia <b>RESTful</b></p>
-				<br />
-				<p>Los estados HTTP de una API REST son:</p>
-				<ul>
-					<li><h3>POST</h3></li>
-					<li><h3>GET</h3></li>
-					<li><h3>PUT</h3></li>
-					<li><h3>DELETE</h3></li>
-				</ul>
-			</section>
-			<section>
-				<p>Más informción sobre REST:</p>
-				<br />
-				<ul>
-					<li><a href="http://www.desarrolloweb.com/articulos/que-es-rest-caracteristicas-sistemas.html" target="_blank">¿Qué es REST?</a></li>
-					<br />
-					<li><a href="http://www.desarrolloweb.com/articulos/ventajas-inconvenientes-apirest-desarrollo.html" target="_blank">Ventajas y Desventajas de API REST</a></li>
-				</ul>
-			</section>
-			<section>
-				<h2>CRUD</h2>
-				<h4>Create, Read, Update and Delete</h4>
-				<br />
-				<h2>ABCC</h2>
-				<h4>Altas, Bajas, Cambios y Consultas</h4>
-				<br />
-				<p>
-					En computación se usa para referirse a las funciones básicas que un sistema utiliza para interactuar con su capa de persistencia (bases de datos).
-				</p>
-				<p><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
 			</section>
 			<section>
 				<h2>Gestores SQL</h2>
@@ -1674,10 +1554,7 @@ $ > npm start
 				<h2>Gestores NoSQL</h2>
 			</section>
 			<section>
-				<h3>Persistencia en Node.js</h3>
-				<p>
-					Prácticamente se puede trabajar con cualquier base de datos:
-				</p>
+				<p>Prácticamente se puede trabajar con cualquier tipo de gestor de base de datos en Node.js:</p>
 				<ul>
 					<li>Transaccionales</li>
 					<li>Relacionales</li>
@@ -1750,15 +1627,101 @@ $ > npm start
 						<a href="https://www.npmjs.com/package/mysql" target="_blank">Módulo mysql</a>
 					</article>
 				</div>
-				<p class="clear"><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
+				<p class="clear"><a href="#/138">&lt;&lt; regresar a Persistencia de Datos</a></p>
 			</section>
+			<section>
+				<h2>Aplicaciones CRUD</h2>
+				<br />
+				<h3>VS</h3>
+				<br />
+				<h2>Aplicaciones REST</h2>
+			</section>
+			<section>
+				<h2>CRUD</h2>
+				<h4>Create, Read, Update and Delete</h4>
+				<br />
+				<h2>ABCC</h2>
+				<h4>Altas, Bajas, Cambios y Consultas</h4>
+				<br />
+				<p>
+					En computación se usa para referirse a las funciones básicas que un sistema utiliza para interactuar con su capa de persistencia (bases de datos).
+				</p>
+			</section>
+			<section>
+				<h2><a href="http://es.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST</a></h2>
+				<br />
+				<h4>Representational State Transfer</h4>
+				<br />
+				<h4>Transferencia de Estado Representacional</h4>
+			</section>
+			<section>
+				<h2>REST</h2>
+				<p>
+					Es una técnica de arquitectura software para sistemas hipermedia distribuidos como Internet
+				</p>
+				<br />
+				<p>
+					El término lo acuña Roy Fielding en su tesis doctoral del año 2000 sobre la web
+				</p>
+				<br />
+				<p>
+					Es uno de los principales autores de la especificación del protocolo HTTP
+				</p>
+			</section>
+			<section>
+				<p>REST se basa en las operaciones del protocolo HTTP</p>
+				<p>
+					REST afirma que la web ha disfrutado de escalabilidad como resultado de una serie de diseños fundamentales clave:
+				</p>
+				<br />
+				<ul>
+					<li>
+						Un protocolo cliente/servidor sin estado
+						<!-- Como resultado, ni el cliente ni el servidor necesitan recordar ningún estado de las comunicaciones entre mensajes. Sin embargo, en la práctica, muchas aplicaciones basadas en HTTP utilizan cookies y otros mecanismos para mantener el estado de la sesión (algunas de estas prácticas, como la reescritura de URLs, no son permitidas por REST) -->
+					</li>
+					<li>
+						Un conjunto de operaciones bien definidas que se aplican a todos los recursos de información
+						<!-- HTTP en sí define un conjunto pequeño de operaciones, las más importantes son POST, GET, PUT y DELETE. Con frecuencia estas operaciones se equiparan a las operaciones CRUD en bases de datos (ABMC en castellano: Alta, Baja, Modificación y Consulta) que se requieren para la persistencia de datos, aunque POST no encaja exactamente en este esquema -->
+					</li>
+					<li>
+						Una sintaxis universal para identificar los recursos
+						<!-- En un sistema REST, cada recurso es direccionable únicamente a través de su URI -->
+					</li>
+					<li>
+						El uso de hipermedios
+						<!-- tanto para la información de la aplicación como para las transiciones de estado de la aplicación: la representación de este estado en un sistema REST son típicamente HTML o XML. Como resultado de esto, es posible navegar de un recurso REST a muchos otros, simplemente siguiendo enlaces sin requerir el uso de registros u otra infraestructura adicional -->
+					</li>
+				</ul>
+			</section>
+			<section>
+				<p>Los sistemas que siguen los principios REST se llaman con frecuencia <b>RESTful</b></p>
+				<br />
+				<p>Los estados HTTP de una API REST son:</p>
+				<ul>
+					<li><h3>POST</h3></li>
+					<li><h3>GET</h3></li>
+					<li><h3>PUT</h3></li>
+					<li><h3>DELETE</h3></li>
+				</ul>
+			</section>
+			<section>
+				<p>Más informción sobre REST:</p>
+				<br />
+				<ul>
+					<li><a href="http://www.desarrolloweb.com/articulos/que-es-rest-caracteristicas-sistemas.html" target="_blank">¿Qué es REST?</a></li>
+					<br />
+					<li><a href="http://www.desarrolloweb.com/articulos/ventajas-inconvenientes-apirest-desarrollo.html" target="_blank">Ventajas y Desventajas de API REST</a></li>
+				</ul>
+				<p><a href="#/138">&lt;&lt; regresar a Persistencia de Datos</a></p>
+			</section>
+			
 			<section>
 				<h2>API CRUD MySQL:</h2>
 				<ul>
 					<li><a href="https://www.npmjs.com/package/mysql" target="_blank">mysql</a><b class="fragment">(<small>Para conectar Node.js a MySQL</small>)</b></li>
 					<li><a href="https://www.npmjs.com/package/express-myconnection" target="_blank">express-myconnection</a><b class="fragment"><br />(<small>Para manejar las conexiones MySQL como middlewares de Express</small>)</b></li>
 				</ul>
-				<p><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
+				<p><a href="#/138">&lt;&lt; regresar a Persistencia de Datos</a></p>
 			</section>
 			<section>
 				<h2>API REST MySQL:</h2>
@@ -1766,7 +1729,7 @@ $ > npm start
 					<li><a href="https://www.npmjs.com/package/express-method-override" target="_blank">express-method-override</a><br /><b class="fragment">(<small>Para implementar verbos HTTP en nuestra API RESTful</small>)</b></li>
 					<li>Implementación del Patrón MVC en Express.js</li>
 				</ul>
-				<p><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
+				<p><a href="#/138">&lt;&lt; regresar a Persistencia de Datos</a></p>
 			</section>
 			<section>
 				<h2>Introducción a MongoDB</h2>
@@ -1899,14 +1862,14 @@ $ > npm start
 				<h2>Estructura de un Documento</h2>
 				<pre>
 					<code class="javascript">
-			{
-				"_id" : ObjectId("524872a99c50880000000001"),
-				"email" : "j@bextlan.com",
-				"password" : "qwerty",
-				"name" : "Jonathan",
-				"date" : 1380479657300,
-				"token" : "hm6ly43v.0o1or"
-			}
+{
+	"_id" : ObjectId("524872a99c50880000000001"),
+	"email" : "jonmircha@gmail.com",
+	"password" : "qwerty",
+	"name" : "Jonathan",
+	"date" : 1380479657300,
+	"token" : "hm6ly43v.0o1or"
+}
 					</code>
 				</pre>
 			</section>
@@ -1914,16 +1877,16 @@ $ > npm start
 				<p>Un documento puede contener arreglos y otros documentos</p>
 				<pre>
 					<code class="javascript">
-			{
-				"_id" : ObjectId("5249a2e9b90687d56453b2f3"),
-			 	"text" : "Soy un comentario",
-			 	"user" : {
-			 		"_id" : ObjectId("524872a99c50880000000001"),
-			 		"nombre" : "Usuario Prueba",
-			 		"avatar" : "/img/user-test.jpg"
-			 	},
-			 	"tags" : [ "test", "prueba" ]
-			}
+{
+	"_id" : ObjectId("5249a2e9b90687d56453b2f3"),
+ 	"text" : "Soy un comentario",
+ 	"user" : {
+ 		"_id" : ObjectId("524872a99c50880000000001"),
+ 		"nombre" : "Usuario Prueba",
+ 		"avatar" : "/img/user-test.jpg"
+ 	},
+ 	"tags" : [ "test", "prueba" ]
+}
 					</code>
 				</pre>
 			</section>
@@ -1950,7 +1913,7 @@ $ > npm start
 				</ul>
 				<pre>
 					<code class="javascript">
-			micol.findOne({ valor: {$in:[5,15]} }, cb)
+micol.findOne({ valor: {$in:[5,15]} }, cb);
 					</code>
 				</pre>
 			</section>
@@ -1964,14 +1927,12 @@ $ > npm start
 				</ul>
 				<pre>
 					<code class="javascript">
-			micol.findOne({
-				$or:[
-					{valor: 5},
-					{
-			precio:{ $gt: 15 }
-					}
-				]
-			},callback)
+micol.findOne({
+	$or:[
+		{ valor: 5 },
+		{ precio:{ $gt: 15 } }
+	]
+},callback);
 					</code>
 				</pre>
 			</section>
@@ -2006,11 +1967,12 @@ $ > npm start
 				</ul>
 				<pre>
 					<code class="javascript">
-			coleccion.find()
-				.sort([['a', -1]])
-			 	.nextObject(function(err, item) {
-			 		// ...
-			 	})
+coleccion
+	.find()
+	.sort([['a', -1]])
+ 	.nextObject(function (err, item) {
+ 		// ...
+	});
 					</code>
 				</pre>
 			</section>
@@ -2022,10 +1984,10 @@ $ > npm start
 				</ul>
 				<pre>
 					<code class="javascript">
-			db.micol.insert([
-				{ nombre: "Usuario Prueba" },
-				{ nombre: "Usuario Prueba 2" }
-			])
+db.micol.insert([
+	{ nombre: "Usuario Prueba" },
+	{ nombre: "Usuario Prueba 2" }
+]);
 					</code>
 				</pre>
 			</section>
@@ -2038,7 +2000,7 @@ $ > npm start
 				</ul>
 				<pre>
 					<code class="javascript">
-			db.micol.save({ nombre: "Usuario Prueba" })
+db.micol.save({ nombre: "Usuario Prueba" });
 					</code>
 				</pre>
 			</section>
@@ -2050,7 +2012,7 @@ $ > npm start
 				</ul>
 				<pre>
 					<code class="javascript">
-			db.micol.remove({ nombre: "Usuario Prueba" })
+db.micol.remove({ nombre: "Usuario Prueba" });
 					</code>
 				</pre>
 			</section>
@@ -2060,7 +2022,7 @@ $ > npm start
 					<a href="http://docs.mongodb.org/manual/" target="_blank">ESTUDIA</a>
 					\<div class="carita">}=)</div>/
 				</h1>
-				<p><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
+				<p><a href="#/138">&lt;&lt; regresar a Persistencia de Datos</a></p>
 			</section>
 			<section>
 				<h2>API REST MongoDB:</h2>
@@ -2074,14 +2036,11 @@ $ > npm start
 						<b class="fragment">(<small>Es un ODM con muchas monadas</small>) <div class="carita">=P</div></b>
 					</li>
 				</ul>
-				<p><a href="#/124">&lt;&lt; regresar unidad 5</a></p>
+				<p><a href="#/138">&lt;&lt; regresar a Persistencia de Datos</a></p>
 			</section>
 			<section>
-				<h1>Unidad 7</h1>
 				<h2>Node.js en Producción</h2>
-				<div>
-					<img src="img/node-server.png" style="max-width:50%;">
-				</div>
+				<img src="img/node-server.png" style="max-width:50%; border:0; box-shadow:none;">
 				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
 			</section>
 			<section>
@@ -2116,6 +2075,31 @@ $ > npm start
 				</ul>
 			</section>
 			<section>
+				<p>Paquetes para gestión y monitoreo de Aplicaciones Node</p>
+				<ul>
+					<li>
+						<a href="https://www.npmjs.com/package/node-inspector" target="_blank">node-inspector</a>
+						<code>(<small>node-debug mi-archivo.js</small>)</code>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/supervisor" target="_blank">supervisor</a>
+						<code>(<small>supervisor mi-archivo.js</small>)</code>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a>
+						<code>(<small>nodemon mi-archivo.js</small>)</code>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/forever" target="_blank">forever</a>
+						<code>(<small>forever start/stop mi-archivo.js</small>)</code>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a>
+						<code>(<small>pm2 start/stop mi-archivo.js</small>)</code>
+					</li>
+				</ul>
+			</section>
+			<section>
 				<h1>Let's to Deploy! \<div class="carita">XD</div>/</h1>
 			</section>
 			<section>
@@ -2128,10 +2112,12 @@ $ > npm start
 				<p>
 					<a href="http://twitter.com/jonmircha" target="_blank">@jonmircha</a>
 					/ 
-					<a href="mailto:j@bextlan.com" target="_blank">j@bextlan.com</a>
+					<a href="mailto:jonmircha@gmail.com" target="_blank">jonmircha@gmail.com</a>
+					/ 
+					<a href="http://jonmircha.com" target="_blank">jonmircha.com</a>
 				</p>
 				<p><a href="#/">&lt;&lt; inicio</a></p>
-			</section> -->
+			</section>
 		</div>
 	</div>
 	<script src="lib/js/head.min.js"></script>
